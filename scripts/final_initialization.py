@@ -2,7 +2,7 @@
 
 #source: in class provided recourses: https://github.com/hsaeidi-uncw/ur5e_control.git, lecture slides, online sources
 #Sidney Tsui
-#Report 2
+#Robotics_lab7
 import rospy
 import math
 # import the messages for reading the joint positions and sending joint commands
@@ -37,20 +37,18 @@ if __name__ == '__main__':
 		pos_cmd_point.positions.append(0.0)
 	# set the ideal time to destination
 	pos_cmd_point.time_from_start = rospy.Duration(1.0) # here one second 
-	# just change the value of the command for the second joint
-	pos_cmd_point.positions[1] = math.pi/4
-	# just change the value of the command for the elbow joint
-	pos_cmd_point.positions[2] = -math.pi/4
-	# add the trajectory point to the command
+
+	pos_cmd_point.positions[1] = math.pi/2
+	pos_cmd_point.positions[2] = -math.pi/2
 	pos_cmd_point.positions[3] = -math.pi/2 #used trial and error to move joint to appropriate place
-	#setting initial positions
 	pos_cmd_point.positions[4] = -math.pi/2#used trial and error for correct values
-	pos_cmd.points.append(pos_cmd_point)
-	# define a message header	
+	
+	pos_cmd.points.append(pos_cmd_point)#add traj points
+	
+	header = Header()#header message
 
 	
 	while not rospy.is_shutdown():
-		header = Header()
 		# update the header with the most recent time stamp
 		header.stamp = rospy.Time.now()
 		# use the most recent header in the position command message
