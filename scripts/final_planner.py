@@ -19,7 +19,6 @@ from robot_vision_lectures.msg import SphereParams #needs sphereparams
 #imports for camera to base transformations
 import tf2_ros
 from tf.transformations import *
-from geometry_msgs.msg import Quaternion
 import tf2_geometry_msgs
 
 raw_x = 0
