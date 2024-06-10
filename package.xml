@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>robotics_lab7</name>
+  <name>Universal_UR5e_system</name>
   <version>0.0.0</version>
-  <description>The robotics_lab7 package</description>
+  <description>The Universal_UR5e_system package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
@@ -19,7 +19,7 @@
   <!-- Url tags are optional, but multiple are allowed, one per tag -->
   <!-- Optional attribute type can be: website, bugtracker, or repository -->
   <!-- Example: -->
-  <!-- <url type="website">http://wiki.ros.org/robotics_lab7</url> -->
+  <!-- <url type="website">http://wiki.ros.org/Universal_UR5e_system</url> -->
 
 
   <!-- Author tags are optional, multiple are allowed, one per tag -->
